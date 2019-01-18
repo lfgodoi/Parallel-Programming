@@ -1,4 +1,4 @@
-# parallel-programming
+# Parallel Programming
 This repository contains:
 - Simple projects that can be used as reference for understanding the parallel processing paradigm;
 - Tests to justify the advantage of parallel programming on systems with real-time requirements;
