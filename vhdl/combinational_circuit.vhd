@@ -14,9 +14,9 @@
     entity combinational_circuit is port
     (
         I1 : in std_logic;                                     -- First input
-	    I2 : in std_logic;                                     -- Second input
-	    I3 : in std_logic;                                     -- Third input
-	    O : out std_logic                                      -- output
+	I2 : in std_logic;                                     -- Second input
+	I3 : in std_logic;                                     -- Third input
+	O : out std_logic                                      -- output
     );
     end combinational_circuit
   
