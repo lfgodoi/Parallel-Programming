@@ -14,8 +14,8 @@
     entity my_and is port                     -- Starting entity
     (
         A : in std_logic;                     -- First input
-	    B : in std_logic;                     -- Second input
-	    O : out std_logic                     -- Output
+	B : in std_logic;                     -- Second input
+        O : out std_logic                     -- Output
     );
     end my_and;                               -- Ending entity
   
