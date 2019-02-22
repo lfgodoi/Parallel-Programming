@@ -7,20 +7,20 @@
 --
 
     -- Importing libraries
-    library IEE;                            
-    use IEE.std_logic_1164.all;             
+    library IEEE;                            
+    use IEEE.std_logic_1164.all;             
   
     -- Setting entity
-    entity my_and is port                     -- Starting entity
+    entity and_port is port                     -- Starting entity
     (
         A : in std_logic;                     -- First input
 	B : in std_logic;                     -- Second input
         O : out std_logic                     -- Output
     );
-    end my_and;                               -- Ending entity
+    end and_port;                               -- Ending entity
   
     -- Setting architecture
-    architecture hardware of my_and is        -- Starting architecture
+    architecture hardware of and_port is        -- Starting architecture
     begin                                     
   
         O <= A and B;                         -- Computing output
