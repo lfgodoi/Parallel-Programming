@@ -23,7 +23,7 @@ end and_port;                                 -- Ending entity
 architecture hardware of and_port is          -- Starting architecture
 begin                                     
 
-	O <= A and B;                         -- Computing output
+	O <= A and B;                         -- Computing output as result of an AND operation
 
 end hardware;                                 -- ending architecture
 
