@@ -21,7 +21,7 @@ entity combinational_circuit is port
 end combinational_circuit
   
 -- Setting architecture
-architecture behavior of combinational_circuit is
+architecture behaviorr of combinational_circuit is
   
 -- Creating intermediary nodes to divide circuit into 3 parts
 signal node1 : str_logic;
@@ -34,6 +34,6 @@ begin
 	node2 <= (not I2) and (not I3);                        -- Computing node 2               
 	node3 <= I1 and (not I3);                              -- Computing node 3
 
-	O <= (node1 or node2 or node3)                         -- Computing output
+	O <= (node1 or node2 or node3);                         -- Computing output
   
-end behavior;
+end behaviorr;
