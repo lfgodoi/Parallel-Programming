@@ -34,6 +34,6 @@ begin
 	node2 <= (not I2) and (not I3);                        -- Computing node 2               
 	node3 <= I1 and (not I3);                              -- Computing node 3
 
-	O <= (node1 or node2 or node3);                        -- Computing output
+	O <= (node1 or node2 or node3)                         -- Computing output
   
 end behavior;
