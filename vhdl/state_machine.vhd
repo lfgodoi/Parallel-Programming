@@ -39,4 +39,4 @@ begin
 			
 	end process my_process;
 		
-end hardware;
+end behavior;
