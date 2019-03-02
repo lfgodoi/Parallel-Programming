@@ -15,7 +15,7 @@ entity decoder is port
 (
 	EN : in std_logic                                         -- Enabling input
 	I : in std_logic_vector(1 downto 0);                      -- Input array (2 pins)
-	O : out std_logic_vector(3 downto 0);                     -- Output array (4 pins)
+	O : out std_logic_vector(3 downto 0)                      -- Output array (4 pins)
 );
 end decoder;
 	
