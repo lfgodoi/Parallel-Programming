@@ -15,7 +15,7 @@ entity state_machine is port
 (
 	clk     : in bit;                         -- Rising edge clock
 	rst     : in bit;                         -- Used to reset state machine
-	state   : inout bit_vector(1 downto 0);   -- Vector of size 2
+	state   : inout bit_vector(1 downto 0)    -- Vector of size 2
 );
 end state_machine;
 	
