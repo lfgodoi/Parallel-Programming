@@ -1,12 +1,24 @@
-# 
-# Parallel Chained Addition 
-# 
-# Using event synchronization to perform chained additions, in which there is interdependence between the results. 
-# 
-# Leonardo Franco de Godói
-# 
- 
-#------------------------------------------------------------------------------ 
+'''
+
+TITLE: 
+   Parallel Chained Addition
+
+DESCRIPTION:
+   Using event synchronization to perform chained additions, 
+   in which there is interdependence between the results.
+   
+VERSION: 
+   Author: Leonardo Godói (eng.leonardogodoi@gmail.com)
+   Creation date: 18-September-2018
+
+REVISION HISTORY:
+   V1.0 | 18-September-2018 | Leonardo Godói | Creation
+
+'''
+
+# -------------------------------------------------------------
+# -------------------------------------------------------------
+# -------------------------------------------------------------
 
 # Importing package for parallel processing in Python
 import pyopencl as cl 
@@ -102,3 +114,7 @@ for a_t, b_t, e_t, f_t, g_t in zip(a, b, e, f, g):
 print("Entradas" + '\n', "A = ", a, '\n', "B = ", b, '\n', "E = ", e, '\n', "G = ", g) 
 print('\n' + "Saída" + '\n', "F = ", f) 
 print('\n' + "Teste dos resultados de F:", correct, "de", N, "resultados corretos.")
+
+# -------------------------------------------------------------
+# -------------------------------------------------------------
+# -------------------------------------------------------------

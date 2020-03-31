@@ -1,10 +1,23 @@
 --
--- Decoder 2:4
+
+-- TITLE: 
+   -- Decoder 2:4
+
+-- DESCRIPTION:
+   -- Quick example of a decoder 2:4 including an enabling port.
+   
+-- VERSION: 
+   -- Author: Leonardo Godói (eng.leonardogodoi@gmail.com)
+   -- Creation date: 14-February-2019
+
+-- REVISION HISTORY:
+   -- V1.0 | 14-February-2019 | Leonardo Godói | Creation
+
 --
--- Quick example of a decoder 2:4 including an enabling port.
---
--- Created by leonardo Franco de Godói
---
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
 
 -- Importing libraries
 library IEEE;
@@ -43,5 +56,7 @@ begin
 	
 end decoding;
 		
-	
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------	
 	

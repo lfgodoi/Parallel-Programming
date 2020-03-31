@@ -1,10 +1,24 @@
 --
--- Combinational circuit
+
+-- TITLE: 
+   -- Combinational Circuit
+
+-- DESCRIPTION:
+   -- Implementing a combinational circuit with 3 inputs 
+   -- and 1 output.
+   
+-- VERSION: 
+   -- Author: Leonardo Godói (eng.leonardogodoi@gmail.com)
+   -- Creation date: 14-February-2019
+
+-- REVISION HISTORY:
+   -- V1.0 | 14-February-2019 | Leonardo Godói | Creation
+
 --
--- Implementing a combinational circuit with 3 inputs and 1 output.
---
--- Created by leonardo Franco de Godói
---
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
 
 -- Importing libraries
 library IEEE;
@@ -13,10 +27,10 @@ use IEEE.std_logic_1164.all;
 -- Setting entity
 entity combinational_circuit is port
 (
-	I1 : in std_logic;                                     -- First input
-	I2 : in std_logic;                                     -- Second input
-	I3 : in std_logic;                                     -- Third input
-	O : out std_logic                                      -- output
+	I1 : in std_logic;        -- First input
+	I2 : in std_logic;        -- Second input
+	I3 : in std_logic;        -- Third input
+	O : out std_logic         -- output
 );
 end combinational_circuit
   
@@ -30,10 +44,14 @@ signal node3 : std_logic;
   
 begin
   
-	node1 <= (not I1) and (not I2);                        -- Computing node 1
-	node2 <= (not I2) and (not I3);                        -- Computing node 2               
-	node3 <= I1 and (not I3);                              -- Computing node 3
+	node1 <= (not I1) and (not I2);       -- Computing node 1
+	node2 <= (not I2) and (not I3);       -- Computing node 2               
+	node3 <= I1 and (not I3);             -- Computing node 3
 
-	O <= (node1 or node2 or node3);                         -- Computing output
+	O <= (node1 or node2 or node3);       -- Computing output
   
 end behavior;
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------

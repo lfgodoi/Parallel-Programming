@@ -1,12 +1,23 @@
-# 
-# Parallel Computing of Moving Average 
-# 
-# Computing the moving average along an array of length N. 
-# 
-# Leonardo Franco de Godói
-# 
- 
-#------------------------------------------------------------------------------ 
+'''
+
+TITLE: 
+   Parallel Computing of Moving Average
+
+DESCRIPTION:
+   Computing the moving average along an array of length N.
+   
+VERSION: 
+   Author: Leonardo Godói (eng.leonardogodoi@gmail.com)
+   Creation date: 09-October-2018
+
+REVISION HISTORY:
+   V1.0 | 09-October-2018 | Leonardo Godói | Creation
+
+'''
+
+# -------------------------------------------------------------
+# -------------------------------------------------------------
+# -------------------------------------------------------------
  
 # Importing package for parallel processing in Python
 import pyopencl as cl 
@@ -64,3 +75,7 @@ cl.enqueue_copy(queue, average, average_buf)
  
 # Printing the results 
 print("Moving average") print('\n' + "Input: ", values) print('\n' + "Output: ", average) 
+
+# -------------------------------------------------------------
+# -------------------------------------------------------------
+# -------------------------------------------------------------

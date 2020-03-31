@@ -1,10 +1,24 @@
 --
--- ALU (Arithmetic and Logic Unit)
+
+-- TITLE: 
+   -- ALU (Arithmetic and Logic Unit)
+
+-- DESCRIPTION:
+   -- Quick example of an ALU with 7 operations, 1 impedance 
+   -- state and 3 selectors.
+   
+-- VERSION: 
+   -- Author: Leonardo Godói (eng.leonardogodoi@gmail.com)
+   -- Creation date: 11-February-2019
+
+-- REVISION HISTORY:
+   -- V1.0 | 11-February-2019 | Leonardo Godói | Creation
+
 --
--- Quick example of an ALU with 7 operations, 1 impedance state and 3 selectors.
---
--- Created by leonardo Franco de Godói
---
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
 
 -- Importing libraries
 library IEEE;
@@ -14,9 +28,9 @@ use IEEE.std_logic_unsigned.all;
 -- Setting entity
 entity alu is port
 (
-	A, B      : in std_logic_vector(3 downto 0);                   -- Input array (4 pins)
-	O         : out std_logic_vector(3 downto 0);                  -- Output array (4 pins)
-	selection : in std_logic_vector(2 downto 0)                    -- Selector array (3 pins)
+	A, B      : in std_logic_vector(3 downto 0);   -- Input array (4 pins)
+	O         : out std_logic_vector(3 downto 0);  -- Output array (4 pins)
+	selection : in std_logic_vector(2 downto 0)    -- Selector array (3 pins)
 );
 end alu;
 	
@@ -24,7 +38,7 @@ end alu;
 architecture operations of alu is
 begin
 	
-	process(A, B, selection)                                           -- Sequential part
+	process(A, B, selection)  -- Sequential part
 	begin
 	
 		-- Computing output according to selectors state
@@ -42,4 +56,10 @@ begin
 	end process;
 	
 end operations;
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+
 	

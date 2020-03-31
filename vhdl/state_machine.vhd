@@ -1,10 +1,23 @@
 --
--- State Machine
+
+-- TITLE: 
+   -- State Machine
+
+-- DESCRIPTION:
+   -- Moore's state machine containing 4 states.
+   
+-- VERSION: 
+   -- Author: Leonardo Godói (eng.leonardogodoi@gmail.com)
+   -- Creation date: 17-February-2019
+
+-- REVISION HISTORY:
+   -- V1.0 | 17-February-2019 | Leonardo Godói | Creation
+
 --
--- Moore's state machine containing 4 states.
---
--- Created by leonardo Franco de Godói
---
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
 
 -- Importing libraries
 library IEEE;
@@ -40,3 +53,7 @@ begin
 	end process my_process;
 		
 end behavior;
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
