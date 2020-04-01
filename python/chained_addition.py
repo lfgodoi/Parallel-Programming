@@ -111,9 +111,9 @@ for a_t, b_t, e_t, f_t, g_t in zip(a, b, e, f, g):
 	    print ("tmp", dev, "a", a, "b", b, "e", e, "g", g, "f", f) 
  
 # Printing the results 
-print("Entradas" + '\n', "A = ", a, '\n', "B = ", b, '\n', "E = ", e, '\n', "G = ", g) 
-print('\n' + "Saída" + '\n', "F = ", f) 
-print('\n' + "Teste dos resultados de F:", correct, "de", N, "resultados corretos.")
+print("Inputs" + '\n', "A = ", a, '\n', "B = ", b, '\n', "E = ", e, '\n', "G = ", g) 
+print('\n' + "Output" + '\n', "F = ", f) 
+print('\n' + "Test results for F:", correct, "de", N, "correct.")
 
 # -------------------------------------------------------------
 # -------------------------------------------------------------
